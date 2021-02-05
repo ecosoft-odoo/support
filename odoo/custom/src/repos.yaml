@@ -14,3 +14,15 @@
     - ocb $ODOO_VERSION
     # Example of a merge of the PR with the number <PR>
     # - oca refs/pull/<PR>/head
+    
+helpdesk:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/helpdesk.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/179/head # helpdesk_mgmt
+    - origin refs/pull/187/head # helpdesk_mgmt_project
+    - origin refs/pull/188/head # helpdesk_mgmt_timesheet

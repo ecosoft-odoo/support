@@ -1,0 +1,4 @@
+helpdesk:
+  - helpdesk_mgmt
+  - helpdesk_mgmt_project
+  - helpdesk_mgmt_timesheet
